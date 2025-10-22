@@ -8,7 +8,7 @@ describe('API Tests', () => {
     request(app)
       .get('/')
       .end((err, res) => {
-        expect(res.status).to.equal(300);
+        expect(res.status).to.equal(200);
         expect(res.text).to.equal('Hello World from Express!');
         done();
       });
